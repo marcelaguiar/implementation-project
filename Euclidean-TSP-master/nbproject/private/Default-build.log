@@ -1,0 +1,13 @@
+g++ -O3 -D_NDEBUG -std=c++11  main.cpp -c -o main.o
+g++ -O3 -D_NDEBUG -std=c++11  point.cpp -c -o point.o
+g++ -O3 -D_NDEBUG -std=c++11  MST.cpp -c -o MST.o
+g++ -O3 -D_NDEBUG -std=c++11  Minmatching/PMexpand.cpp -c -o Minmatching/PMexpand.o
+g++ -O3 -D_NDEBUG -std=c++11  Minmatching/PMmain.cpp -c -o Minmatching/PMmain.o
+g++ -O3 -D_NDEBUG -std=c++11  Minmatching/PMrepair.cpp -c -o Minmatching/PMrepair.o
+g++ -O3 -D_NDEBUG -std=c++11  Minmatching/misc.cpp -c -o Minmatching/misc.o
+g++ -O3 -D_NDEBUG -std=c++11  Minmatching/PMshrink.cpp -c -o Minmatching/PMshrink.o
+g++ -O3 -D_NDEBUG -std=c++11  Minmatching/PMinit.cpp -c -o Minmatching/PMinit.o
+g++ -O3 -D_NDEBUG -std=c++11  Minmatching/PMduals.cpp -c -o Minmatching/PMduals.o
+g++ -O3 -D_NDEBUG -std=c++11  Minmatching/PMinterface.cpp -c -o Minmatching/PMinterface.o
+g++ -O3 -D_NDEBUG -std=c++11  Minmatching/MinCost/MinCost.cpp -c -o Minmatching/MinCost/MinCost.o
+g++ -O3 -D_NDEBUG -std=c++11  -o TSP  ./main.o  ./point.o  ./MST.o  Minmatching/PMexpand.o  Minmatching/PMmain.o  Minmatching/PMrepair.o  Minmatching/misc.o  Minmatching/PMshrink.o  Minmatching/PMinit.o  Minmatching/PMduals.o  Minmatching/PMinterface.o  ./Minmatching/MinCost/MinCost.o  -lrt
